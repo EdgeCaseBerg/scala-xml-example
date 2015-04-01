@@ -1,0 +1,10 @@
+@(testInfo: models.TestInfo)
+<TestInfo>
+	<Id>@testInfo.id</Id>
+	<Name>@testInfo.name</Name>
+	<Days>
+		@for(day <- testInfo.days){
+		<Day>@day</Day>
+		}
+	</Days>
+</TestInfo>

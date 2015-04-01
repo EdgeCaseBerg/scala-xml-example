@@ -2,14 +2,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestInfoList>
 	@for(testInfo <- nodeList){
-	<TestInfo>
-		<Id>@testInfo.id</Id>
-		<Name>@testInfo.name</Name>
-		<Days>
-			@for(day <- testInfo.days){
-			<Day>@day</Day>
-			}
-		</Days>
-	</TestInfo>
+		@common.testinfo(testInfo)
 	}
 </TestInfoList>
