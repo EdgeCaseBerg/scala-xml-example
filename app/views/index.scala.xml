@@ -1,6 +1,9 @@
 @(nodeList : List[TestInfo])
 <?xml version="1.0" encoding="UTF-8"?>
-<TestInfoList>
+<TestInfoList 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://localhost:9000/testInfo.xsd"
+>
 	@for(testInfo <- nodeList){
 		@common.testinfo(testInfo)
 	}
