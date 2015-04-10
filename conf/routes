@@ -1,2 +1,2 @@
-GET / controllers.Example.index
+GET /             controllers.Example.index
 GET /testInfo.xsd controllers.Assets.at(path="/public/", file="testInfo.xsd")
